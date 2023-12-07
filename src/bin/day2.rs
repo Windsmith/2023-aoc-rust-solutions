@@ -2,7 +2,7 @@ use regex::Regex;
 use std::fs;
 
 fn main() {
-    let contents = fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents: String = utils::get_input(2).unwrap();
 
     println!("{}", part1(&contents));
     println!("{}", part2(&contents));

@@ -1,7 +1,8 @@
-use std::fs;
+use std::{fs, string};
+use utils;
 
 fn main() {
-    let contents = fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents: String = utils::get_input(1).unwrap();
 
     println!("{}", part1(&contents));
     println!("{}", part2(&contents));
