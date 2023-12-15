@@ -1,5 +1,4 @@
 use regex::Regex;
-use std::fs;
 
 fn main() {
     let contents: String = utils::get_input(2).unwrap();
